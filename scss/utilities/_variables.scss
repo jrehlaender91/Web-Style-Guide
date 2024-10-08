@@ -1,0 +1,33 @@
+
+$color-text: #777;
+$color-primary: #58e1c1;
+$color-secondary: #51ddfc;
+$white: #fff;
+
+$backgrounds: (
+    '1':#927bc1,
+    '2':#fd7856,
+    '3':#deb2ee,
+    '4':#7ee6fd,
+    '5':#88d9a0,
+    '6':#4da2bb,
+    '7':#ec9fa3,
+    '8':#fd9f85,
+    '9':#e4757a,
+    '10':#63cc82,
+    '11':#51ddfc,
+    '12':#80e8d1
+);
+
+$buttons: (
+    'default': #51ddfc,
+    'error': #e4757a,
+    'info':#927bc1,
+    'success': #63cc82,
+    'warning': #fd7856,
+);
+
+$break-xs: 575px;
+$break-s: 576px;
+$break-m: 768px;
+$break-l: 992px;

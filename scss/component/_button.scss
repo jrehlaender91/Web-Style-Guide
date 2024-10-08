@@ -1,0 +1,23 @@
+.btn {
+    margin-top: 15px;
+    width: 100%;
+    color: $white;
+    border: none;
+    padding: 10px 0;
+    border-radius: 5px;
+    @media (min-width: $break-m) {
+        padding: 10px 30px;
+      }
+  }
+  
+  @each $status, $color in $buttons {
+    .#{$status} {
+        background-color: #{$color};
+      } 
+}
+
+  @media (min-width: $break-m) {
+    .btn + .btn {
+        margin-left: 10px;
+    }
+  }

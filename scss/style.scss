@@ -1,0 +1,16 @@
+// PARTIALS
+
+// Utilities
+@import 'utilities/variables';
+
+// Components styles
+@import 'component/navigation',
+        'component/grid',
+        'component/button',
+        'component/form',
+        'component/images';
+
+// Base styles
+@import 'base/reset',
+        'base/typography',
+        'base/base';
