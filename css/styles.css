@@ -1,8 +1,3 @@
-/* Buttons colors
-$error: #e4757a;
-$info: #927bc1;
-$success: #63cc82;
-$warning: #fd7856;*/
 .nav {
   padding-left: 0;
   flex-basis: 100%;
@@ -180,58 +175,38 @@ $warning: #fd7856;*/
 .default {
   background-color: #51ddfc;
 }
+.default:hover {
+  background-color: rgb(156.2033898305, 235.6949152542, 253.2966101695);
+}
 
 .error {
   background-color: #e4757a;
+}
+.error:hover {
+  background-color: rgb(240.5181818182, 180.9818181818, 183.6636363636);
 }
 
 .info {
   background-color: #927bc1;
 }
+.info:hover {
+  background-color: rgb(188.9819587629, 175.0515463918, 217.4484536082);
+}
 
 .success {
   background-color: #63cc82;
+}
+.success:hover {
+  background-color: rgb(156.652173913, 222.847826087, 176.1956521739);
 }
 
 .warning {
   background-color: #fd7856;
 }
-
-/*
-.default {
-  background-color: $color-secondary;
-  &:hover {
-    background-color: lighten($color-secondary, 15%);
-  }
+.warning:hover {
+  background-color: rgb(253.8947368421, 180.3947368421, 161.6052631579);
 }
 
-.error {
-  background-color: $error;
-  &:hover {
-    background-color: lighten($error, 15%);
-  }
-}
-
-.info {
-  background-color: $info;
-  &:hover {
-    background-color: lighten($info, 15%);
-  }
-}
-
-.success {
-  background-color: $success;
-  &:hover {
-    background-color: lighten($success, 15%);
-  }
-}
-
-.warning {
-  background-color: $warning;
-  &:hover {
-    background-color: lighten($warning, 15%);
-  }
-}*/
 @media (min-width: 768px) {
   .btn + .btn {
     margin-left: 10px;
