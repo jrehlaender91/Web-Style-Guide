@@ -1,10 +1,14 @@
+/* Buttons colors
+$error: #e4757a;
+$info: #927bc1;
+$success: #63cc82;
+$warning: #fd7856;*/
 .nav {
   padding-left: 0;
   flex-basis: 100%;
   display: flex;
   flex-direction: column;
 }
-
 .nav-link {
   text-align: center;
   border-radius: 5px;
@@ -13,7 +17,6 @@
   width: 100%;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
-
 .nav-link:hover {
   color: #fff;
   background-color: #58e1c1;
@@ -194,6 +197,41 @@
   background-color: #fd7856;
 }
 
+/*
+.default {
+  background-color: $color-secondary;
+  &:hover {
+    background-color: lighten($color-secondary, 15%);
+  }
+}
+
+.error {
+  background-color: $error;
+  &:hover {
+    background-color: lighten($error, 15%);
+  }
+}
+
+.info {
+  background-color: $info;
+  &:hover {
+    background-color: lighten($info, 15%);
+  }
+}
+
+.success {
+  background-color: $success;
+  &:hover {
+    background-color: lighten($success, 15%);
+  }
+}
+
+.warning {
+  background-color: $warning;
+  &:hover {
+    background-color: lighten($warning, 15%);
+  }
+}*/
 @media (min-width: 768px) {
   .btn + .btn {
     margin-left: 10px;
@@ -595,9 +633,6 @@ a {
   border-radius: 5px;
 }
 
-/* ============================================= */
-/*              Buttons                          */
-/* ============================================= */
 .btn {
   text-transform: uppercase;
 }
@@ -610,4 +645,4 @@ p {
   line-height: 1.45em;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=styles.css.map */

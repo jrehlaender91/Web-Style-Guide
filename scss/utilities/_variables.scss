@@ -1,9 +1,11 @@
-
+// Main colors
 $color-text: #777;
 $color-primary: #58e1c1;
 $color-secondary: #51ddfc;
 $white: #fff;
+$frame: #ccc;
 
+// Grid colors
 $backgrounds: (
     '1':#927bc1,
     '2':#fd7856,
@@ -15,18 +17,25 @@ $backgrounds: (
     '8':#fd9f85,
     '9':#e4757a,
     '10':#63cc82,
-    '11':#51ddfc,
-    '12':#80e8d1
+    '11': $color-secondary,
+    '12':#80e8d1,
 );
 
+/* Buttons colors
+$error: #e4757a;
+$info: #927bc1;
+$success: #63cc82;
+$warning: #fd7856;*/
+
 $buttons: (
-    'default': #51ddfc,
+    'default': $color-secondary,
     'error': #e4757a,
-    'info':#927bc1,
+    'info': #927bc1,
     'success': #63cc82,
     'warning': #fd7856,
 );
 
+// Breakpoints
 $break-xs: 575px;
 $break-s: 576px;
 $break-m: 768px;

@@ -1,23 +1,67 @@
 .btn {
-    margin-top: 15px;
-    width: 100%;
-    color: $white;
-    border: none;
-    padding: 10px 0;
-    border-radius: 5px;
-    @media (min-width: $break-m) {
-        padding: 10px 30px;
-      }
+  margin-top: 15px;
+  width: 100%;
+  color: $white;
+  border: none;
+  padding: 10px 0;
+  border-radius: 5px;
+  @media (min-width: $break-m) {
+    padding: 10px 30px;
   }
-  
-  @each $status, $color in $buttons {
-    .#{$status} {
-        background-color: #{$color};
-      } 
 }
 
-  @media (min-width: $break-m) {
-    .btn + .btn {
-        margin-left: 10px;
-    }
+//CHECK THIS, PLEASE!
+// Each rule that pairs button elements with colors
+@each $status, $bg in $buttons {
+  .#{$status} {
+    background-color: #{$bg};
   }
+  //.#{$status}:hover {
+  //  background-color: lighten(#{$bg}, 15%);
+  //}
+}
+
+
+
+/*
+.default {
+  background-color: $color-secondary;
+  &:hover {
+    background-color: lighten($color-secondary, 15%);
+  }
+}
+
+.error {
+  background-color: $error;
+  &:hover {
+    background-color: lighten($error, 15%);
+  }
+}
+
+.info {
+  background-color: $info;
+  &:hover {
+    background-color: lighten($info, 15%);
+  }
+}
+
+.success {
+  background-color: $success;
+  &:hover {
+    background-color: lighten($success, 15%);
+  }
+}
+
+.warning {
+  background-color: $warning;
+  &:hover {
+    background-color: lighten($warning, 15%);
+  }
+}*/
+
+// Media Queries
+@media (min-width: $break-m) {
+  .btn + .btn {
+    margin-left: 10px;
+  }
+}
